@@ -1,0 +1,9 @@
+.quizes-list {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 94vh;
+    background: linear-gradient(135deg, #497174, #e6e2c3);
+}

@@ -1,0 +1,229 @@
+body {
+    padding-top: 6vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: block;
+}
+
+main .page {
+    min-height: 37.5 rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.page-section {
+    position: relative;
+    padding: 0;
+    background-image: url('../../assets/1205-BANNER-WEB-CHIRSTMAS-06.jpg');
+}
+
+/* FIRST SECTION */
+
+.first-section {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 40rem));
+    grid-gap: 2rem;
+    justify-content: center;
+}
+
+.banner {
+    overflow: hidden;
+    background-color: #431b93;
+    box-shadow: 0px 2px 20px #3b3e3f;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    height: 18rem;
+    transition: transform 200ms ease-in;
+}
+
+.banner-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.banner-image {
+    height: 18rem;
+    object-fit: cover;
+}
+
+.banner-title {
+    padding: 1rem;
+    color: white;
+    font-weight: 900;
+}
+
+.banner-description {
+    padding: 0 1rem;
+    color: #c2a5df;
+}
+
+.banner-button {
+    padding: 0.5rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 1rem;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    border-radius: 0.2rem;
+    background-color: #26890c;
+    transition: transform 300ms ease-in;
+}
+.banner-button a {
+    color: #fff;
+}
+
+.banner:hover {
+    transform: scale(1.02);
+}
+
+.banner-button:hover {
+    transform: scale(1.05);
+}
+
+/* SECOND SECTION */
+.second-section {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 20rem));
+    grid-gap: 2rem;
+    justify-content: center;
+    position: relative;
+}
+
+.section-background {
+    background-color: rgba(193, 191, 191, 0.3);
+    width: 100%;
+    height: 70%;
+    position: absolute;
+}
+
+.info {
+    overflow: hidden;
+    margin: 1.5rem;
+    background-color: white;
+    box-shadow: 0px 3px 20px #454849;
+    border-radius: 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 13rem;
+    transition: transform 200ms ease-in;
+    z-index: 1;
+    border: solid 1px #c60929;
+}
+
+.info-body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.info-title {
+    padding: 1rem;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info-description {
+    font-size: 0.875rem;
+    padding: 0 1rem;
+    color: #6e6e6e;
+}
+
+.info-link {
+    color: #1368ce;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.info-link::after {
+    content: '';
+    width: 0;
+    height: 0.125rem;
+    border-radius: 0.2rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1.5rem;
+    background-color: #1368ce;
+    transition: width 200ms ease-in;
+}
+
+.info-link:hover::after {
+    width: 40%;
+}
+
+/* THIRD SECTION */
+.third-section {
+    margin-top: 3rem;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.third-section h1 {
+    text-align: center;
+}
+
+.card-button {
+    padding: 1rem;
+    position: relative;
+    line-height: 1.8;
+    background-color: #0542b9;
+    border-radius: 0.25 rem;
+    width: 40%;
+    margin: auto;
+    margin-top: 3rem;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.card-button a {
+    color: white;
+    text-decoration: underline;
+}
+
+.card-container {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card {
+    width: 30%;
+    margin: 1rem;
+    border: solid 1px #c60929;
+    background-color: white;
+    box-shadow: 0px 2px 20px #31373a;
+    border-radius: 0.2rem;
+    text-align: center;
+}
+
+.card:nth-of-type(2) {
+    position: relative;
+    top: -30px;
+}
+
+.card-body h1 {
+    padding: 1rem;
+}
+
+.card-body p {
+    padding: 1rem;
+}

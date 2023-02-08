@@ -1,0 +1,161 @@
+.quizes-list {
+    padding: 2.4rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 94vh;
+    background: linear-gradient(135deg, #1c315e, #e6e2c3);
+}
+
+.quiz-settings {
+    width: 75%;
+    padding: 24px;
+    box-shadow: 0px 0px 5px #302f2f;
+    border-radius: 8px;
+    /* background: linear-gradient(rgb(87, 15, 255, 0.1), rgba(255, 40, 40, 0.1)); */
+    background-color: #f9f9f9;
+}
+
+.quiz-settings h2 {
+    line-height: 100%;
+    font-size: 42px;
+    font-weight: 700;
+    background-image: linear-gradient(to right, #e4692b, #ec985f);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.quiz-form {
+    color: rgb(110, 110, 110);
+    font-size: 1.2rem;
+}
+
+.option-label {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    color: #180a0a;
+}
+
+.quiz-input {
+    margin-top: 8px;
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 1rem;
+    resize: none;
+    border-radius: 4px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    background-color: #cccccc;
+}
+
+.quiz-input:hover {
+    border: 1px solid #000;
+}
+.quiz-input:empty {
+    background-color: #cccccc;
+}
+.quiz-input:not(:placeholder-shown) {
+    background-color: #fefcf3;
+}
+.quiz-input:focus-within {
+    background-color: #fefcf3;
+}
+
+.quiz-input-desc {
+    font-size: 1rem;
+}
+
+.option-buttons {
+    display: flex;
+    margin-top: 8px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+
+.option-button,
+.submit-button {
+    background-color: inherit;
+    outline: none;
+    color: rgb(110, 110, 110);
+    font-size: 1rem;
+    border: 1px solid black;
+    border-radius: 2%;
+}
+
+.option-button {
+    width: 120px;
+    height: 40px;
+    /* margin-right: 8px; */
+
+    cursor: pointer;
+}
+
+.option-button-public {
+    border-right: none;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.option-button-private {
+    border-radius: 0px 4px 4px 0px;
+    border-left: none;
+}
+
+@keyframes changeColorActive {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: rgb(19, 104, 206);
+    }
+}
+
+@keyframes changeColorDisabled {
+    from {
+        background-color: rgb(19, 104, 206);
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+.active {
+    background-color: rgb(19, 104, 206);
+    color: #fff;
+    animation-name: changeColorActive;
+    animation-duration: 0.5s;
+}
+
+.disabled {
+    background-color: white;
+    animation-name: changeColorDisabled;
+    animation-duration: 0.5s;
+}
+
+.disabled:hover {
+    color: #000;
+    background-color: rgb(185, 217, 255);
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    cursor: pointer;
+    margin-top: 12px;
+    min-width: 200px;
+    height: 50px;
+    background-color: #e37a47;
+    color: white;
+    border-radius: 999px;
+}
+
+.submit-button:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,36 @@
+.quiz-card {
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 2px 20px #263159;
+  border-radius: 10px;
+  display: flex;
+  /* height: 9rem; */
+  width: 96%;
+  /* margin: 20px; */
+  margin-bottom: 20px;
+  transition: transform 200ms ease-in;
+  /* background: ; */
+}
+
+.quiz-card:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.quiz-card>div {
+  width: 30%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.quiz-description {
+  width: 485px;
+  color: #000;
+  font-size: 20px;
+}

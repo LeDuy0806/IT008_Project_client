@@ -1,0 +1,17 @@
+.container {
+    /* display: block;
+    justify-content: center;
+    align-items: center;
+    translate: 40% 60px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3.75rem 0 7.5rem;
+}
+
+.textnoresults {
+    margin: 0.9375rem 0 0.625rem;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 1.125rem;
+}

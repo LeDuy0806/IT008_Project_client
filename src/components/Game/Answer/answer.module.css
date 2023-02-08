@@ -1,0 +1,79 @@
+.answer-field {
+    width: 40%;
+    height: 108px;
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.answer-field h2 {
+    padding-left: 20px;
+    background-color: inherit;
+    width: 80%;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+.answer-field:nth-of-type(1) {
+    background-color: var(--red-answer-color);
+    box-shadow: 0 6px 0 rgb(0 0 0 / 20%), 0 6px 0 var(--red-answer-color);
+}
+
+.answer-field:nth-of-type(2) {
+    background-color: var(--blue-answer-color);
+    box-shadow: 0 6px 0 rgb(0 0 0 / 20%), 0 6px 0 var(--blue-answer-color);
+}
+
+.answer-field:nth-of-type(3) {
+    background-color: var(--yellow-answer-color);
+    box-shadow: 0 6px 0 rgb(0 0 0 / 20%), 0 6px 0 var(--yellow-answer-color);
+}
+
+.answer-field:nth-of-type(4) {
+    background-color: var(--green-answer-color);
+    box-shadow: 0 6px 0 rgb(0 0 0 / 20%), 0 6px 0 var(--green-answer-color);
+}
+
+.answer-correct {
+    outline: 8px solid #fff;
+    box-shadow: none;
+    transition: all 0.5s;
+}
+
+.answer-icon {
+    width: 50px;
+    height: auto;
+}
+
+.answer-text {
+    color: #fff;
+    font-size: 20px;
+}
+
+.answer-check {
+    width: 50px;
+    height: 50px;
+    border: 4px solid white;
+    background-color: inherit;
+    border-radius: 50%;
+}
+
+.answer-check img {
+    visibility: hidden;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(102, 191, 57);
+    border-radius: 50%;
+}
+
+.answer-check:hover {
+    background-color: rgb(102, 191, 57);
+    cursor: pointer;
+}

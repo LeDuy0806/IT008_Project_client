@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400;1,800&display=swap');
+
+:root {
+    --text-color: '#333';
+    /* 094074-3c6997-5adbff-ffdd4a-fe9000 */
+    /* 44af69-f8333c-fcab10-2b9eb3-dbd5b5 */
+    --red-answer-color: rgb(208, 25, 55);
+    --blue-answer-color: rgb(18, 96, 190);
+    --green-answer-color: rgb(35, 126, 11);
+    --yellow-answer-color: rgb(199, 146, 0);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    overflow-y: overlay;
+    background-color: #333;
+}
+
+/* scrollbar css */
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+button {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+.hide_navbar {
+    padding-top: 0;
+}
+a {
+    text-decoration: none;
+}

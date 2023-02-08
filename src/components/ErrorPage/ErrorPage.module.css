@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    position: relative;
+    height: 94vh;
+    width: 100%;
+    justify-content: center;
+    background-color: #fff;
+}
+.button {
+    display: block;
+    left: auto;
+    right: auto;
+    bottom: 100px;
+    position: absolute;
+    color: #fff;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 99px;
+    background-color: #1a2b5a;
+}
+
+.button:hover {
+    background-color: #3b4e82;
+}
